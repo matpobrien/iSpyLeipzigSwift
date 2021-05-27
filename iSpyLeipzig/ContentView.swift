@@ -8,52 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
-
-    @State var showMenu = false
+    @State private var selection = 0
 
     var body: some View {
-        VStack {
-            VStack(alignment: .leading) {
-                HStack {
-                    Image(systemName: "menubar.rectangle")
-
-                        .imageScale(.large)
-                        .foregroundColor(.red)
-                    Color.red
-                }.frame(height: 30)
-                .border(Color.red)
-                Text("Self Evaluation Journal")
-                    .padding(.leading, 50)
-                    .padding(.bottom, 190)
-                    .foregroundColor(.red)
-                    .font(.system(
-                            size: 30,
-                            design: .monospaced))
-
-            }.border(Color.red).padding()
-            VStack {
-                PostsView()
-
-            }
-            .font(.subheadline).foregroundColor(.white)
-            Spacer()
-            FooterMenu()
-
+        TabView(selection: $selection) {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                }
+                .tag(0)
+            JournalView()
+                .tabItem {
+                        Image(systemName: "book")
+                }
+                .foregroundColor(.red)
+                .tag(1)
         }
     }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
-    let geometry: GeometryProxy
     static var previews: some View {
         Group {
-           ContentView()
+            ContentView()
         }
     }
 }
 
-struct FooterMenu: View {
+// TODO: refactor this into tabsview
+/* struct FooterMenu: View {
     var body: some View {
 
         HStack(alignment: .center) {
@@ -77,3 +61,5 @@ struct FooterMenu: View {
 
     }
 }
+*/
+

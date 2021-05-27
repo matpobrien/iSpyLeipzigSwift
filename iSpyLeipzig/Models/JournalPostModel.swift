@@ -8,12 +8,14 @@
 import Foundation
 import SwiftUI
 
-class Post {
+struct JournalPost {
     var date: Date
     var subject: String
+    var content: String
 
-    init(date: Date, subject: String) {
+    init(date: Date, subject: String, content: String) {
         self.date = date
         self.subject = subject
+        self.content = content
     }
 }
