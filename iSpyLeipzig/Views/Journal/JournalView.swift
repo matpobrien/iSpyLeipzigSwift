@@ -14,7 +14,9 @@ struct JournalView: View {
                 VStack {
                     HeadingView(geometry: geometry, title: "Self Evaluation Journal", color: .red)
                     Spacer()
-                    JournalPostsView(geometry: geometry)}
+                    JournalPostsView(geometry: geometry)
+
+                }.padding(.top, geometry.size.height * 0.1)
             }
         }
     }
@@ -22,6 +24,6 @@ struct JournalView: View {
 
 struct JournalView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        JournalView()
     }
 }

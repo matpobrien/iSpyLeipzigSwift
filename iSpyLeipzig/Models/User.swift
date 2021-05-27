@@ -15,7 +15,7 @@ struct User: Identifiable, Hashable {
     var tokens: Int = 0
 }
 
-final class UserStore: ObservableObject {
+final class UserViewModel: ObservableObject {
     @Published var user: User
 
     init(user: User) {

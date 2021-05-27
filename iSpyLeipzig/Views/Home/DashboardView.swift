@@ -13,11 +13,8 @@ struct DashboardView: View {
         ScrollView {
             GeometryReader { geometry in
                 VStack(spacing: geometry.size.height * 0.5) {
-                    HStack {
-                        Spacer()
                         HeadingView(geometry: geometry, title: "Welcome to your Dashboard!", color: .black)
-                        Spacer()
-                    }
+
                     VStack {
                         Spacer()
                         NavRowView(geometry: geometry, leftTitle: "I Spy Board",  rightTitle: "Get Tokens", leftColor: .red, rightColor: .yellow)

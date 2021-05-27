@@ -13,13 +13,16 @@
 		DA2F0EDD265A5A2B00A73AD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2F0EDC265A5A2B00A73AD3 /* Preview Assets.xcassets */; };
 		DAA805F0265F93A300E20479 /* JournalPostHeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805EF265F93A300E20479 /* JournalPostHeadingView.swift */; };
 		DAA805F2265F93F800E20479 /* JournalPostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805F1265F93F800E20479 /* JournalPostsView.swift */; };
-		DAA805F4265F9D2E00E20479 /* JournalPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805F3265F9D2E00E20479 /* JournalPostModel.swift */; };
+		DAA805F4265F9D2E00E20479 /* JournalPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805F3265F9D2E00E20479 /* JournalPost.swift */; };
 		DAA805F9265FA6C100E20479 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805F8265FA6C100E20479 /* HeadingView.swift */; };
 		DAA805FB265FAD0200E20479 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805FA265FAD0200E20479 /* JournalView.swift */; };
 		DAA805FD265FB86D00E20479 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805FC265FB86D00E20479 /* DashboardView.swift */; };
 		DAA805FF265FCE1400E20479 /* NavRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805FE265FCE1400E20479 /* NavRowView.swift */; };
 		DAA80601265FCF8400E20479 /* NavItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA80600265FCF8400E20479 /* NavItemView.swift */; };
-		DAA80608265FDCBB00E20479 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA80607265FDCBB00E20479 /* UserStore.swift */; };
+		DAA80608265FDCBB00E20479 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA80607265FDCBB00E20479 /* User.swift */; };
+		DAA8060B265FDE7F00E20479 /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8060A265FDE7F00E20479 /* AccountSettingsView.swift */; };
+		DAA8060D265FDF5500E20479 /* AccountSettingsFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8060C265FDF5500E20479 /* AccountSettingsFormView.swift */; };
+		DAA80611265FEB3400E20479 /* AccountTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA80610265FEB3400E20479 /* AccountTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +34,16 @@
 		DA2F0EDE265A5A2B00A73AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA805EF265F93A300E20479 /* JournalPostHeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPostHeadingView.swift; sourceTree = "<group>"; };
 		DAA805F1265F93F800E20479 /* JournalPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPostsView.swift; sourceTree = "<group>"; };
-		DAA805F3265F9D2E00E20479 /* JournalPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPostModel.swift; sourceTree = "<group>"; };
+		DAA805F3265F9D2E00E20479 /* JournalPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPost.swift; sourceTree = "<group>"; };
 		DAA805F8265FA6C100E20479 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		DAA805FA265FAD0200E20479 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
 		DAA805FC265FB86D00E20479 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DAA805FE265FCE1400E20479 /* NavRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRowView.swift; sourceTree = "<group>"; };
 		DAA80600265FCF8400E20479 /* NavItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavItemView.swift; sourceTree = "<group>"; };
-		DAA80607265FDCBB00E20479 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		DAA80607265FDCBB00E20479 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DAA8060A265FDE7F00E20479 /* AccountSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
+		DAA8060C265FDF5500E20479 /* AccountSettingsFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsFormView.swift; sourceTree = "<group>"; };
+		DAA80610265FEB3400E20479 /* AccountTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		DAA805F5265F9D7500E20479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAA80609265FDE7200E20479 /* AccountSettings */,
 				DAA80605265FD6D100E20479 /* Nav */,
 				DAA805F8265FA6C100E20479 /* HeadingView.swift */,
 				DAA80604265FCFE800E20479 /* Home */,
@@ -114,7 +121,8 @@
 		DAA805F7265F9DA100E20479 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DAA805F3265F9D2E00E20479 /* JournalPostModel.swift */,
+				DAA80607265FDCBB00E20479 /* User.swift */,
+				DAA805F3265F9D2E00E20479 /* JournalPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -139,9 +147,18 @@
 		DAA80606265FDCA500E20479 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
-				DAA80607265FDCBB00E20479 /* UserStore.swift */,
 			);
 			path = Stores;
+			sourceTree = "<group>";
+		};
+		DAA80609265FDE7200E20479 /* AccountSettings */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8060A265FDE7F00E20479 /* AccountSettingsView.swift */,
+				DAA8060C265FDF5500E20479 /* AccountSettingsFormView.swift */,
+				DAA80610265FEB3400E20479 /* AccountTextField.swift */,
+			);
+			path = AccountSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,12 +231,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2F0ED8265A5A2900A73AD3 /* ContentView.swift in Sources */,
-				DAA80608265FDCBB00E20479 /* UserStore.swift in Sources */,
+				DAA8060B265FDE7F00E20479 /* AccountSettingsView.swift in Sources */,
+				DAA8060D265FDF5500E20479 /* AccountSettingsFormView.swift in Sources */,
+				DAA80611265FEB3400E20479 /* AccountTextField.swift in Sources */,
+				DAA80608265FDCBB00E20479 /* User.swift in Sources */,
 				DAA805FF265FCE1400E20479 /* NavRowView.swift in Sources */,
 				DAA805F9265FA6C100E20479 /* HeadingView.swift in Sources */,
 				DAA805FB265FAD0200E20479 /* JournalView.swift in Sources */,
 				DAA80601265FCF8400E20479 /* NavItemView.swift in Sources */,
-				DAA805F4265F9D2E00E20479 /* JournalPostModel.swift in Sources */,
+				DAA805F4265F9D2E00E20479 /* JournalPost.swift in Sources */,
 				DAA805F0265F93A300E20479 /* JournalPostHeadingView.swift in Sources */,
 				DAA805FD265FB86D00E20479 /* DashboardView.swift in Sources */,
 				DAA805F2265F93F800E20479 /* JournalPostsView.swift in Sources */,

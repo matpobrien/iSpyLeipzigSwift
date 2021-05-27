@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
+    @State private var selection = 2
 
     var body: some View {
         TabView(selection: $selection) {
@@ -21,9 +21,14 @@ struct ContentView: View {
                 .tabItem {
                         Image(systemName: "book")
                 }
-                .foregroundColor(.red)
                 .tag(1)
+           AccountSettingsView()
+                .tabItem {
+                    Image(systemName: "person")
+                }
+                .tag(2)
         }
+        // .tabViewStyle(PageTabViewStyle())
     }
 }
 
@@ -35,31 +40,4 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
-
-// TODO: refactor this into tabsview
-/* struct FooterMenu: View {
-    var body: some View {
-
-        HStack(alignment: .center) {
-            NavigationLink(destination: Text("")){
-                Image(systemName: "house").imageScale(.large).foregroundColor(.red)
-            }
-            Spacer()
-            Image(systemName: "arrow.left")
-                .foregroundColor(.red)
-                .imageScale(.large)
-                .padding(5)
-                .border(Color.red)
-                .padding(.trailing, 30)
-            Image(systemName: "arrow.right")
-                .foregroundColor(.red)
-                .imageScale(.large)
-                .padding(5)
-                .border(Color.red)
-
-        }.padding().border(Color.red).padding()
-
-    }
-}
-*/
 
