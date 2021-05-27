@@ -16,9 +16,10 @@
 		DAA805F4265F9D2E00E20479 /* JournalPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805F3265F9D2E00E20479 /* JournalPostModel.swift */; };
 		DAA805F9265FA6C100E20479 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805F8265FA6C100E20479 /* HeadingView.swift */; };
 		DAA805FB265FAD0200E20479 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805FA265FAD0200E20479 /* JournalView.swift */; };
-		DAA805FD265FB86D00E20479 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805FC265FB86D00E20479 /* HomeView.swift */; };
+		DAA805FD265FB86D00E20479 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805FC265FB86D00E20479 /* DashboardView.swift */; };
 		DAA805FF265FCE1400E20479 /* NavRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA805FE265FCE1400E20479 /* NavRowView.swift */; };
 		DAA80601265FCF8400E20479 /* NavItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA80600265FCF8400E20479 /* NavItemView.swift */; };
+		DAA80608265FDCBB00E20479 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA80607265FDCBB00E20479 /* UserStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,10 @@
 		DAA805F3265F9D2E00E20479 /* JournalPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalPostModel.swift; sourceTree = "<group>"; };
 		DAA805F8265FA6C100E20479 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		DAA805FA265FAD0200E20479 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
-		DAA805FC265FB86D00E20479 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DAA805FC265FB86D00E20479 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DAA805FE265FCE1400E20479 /* NavRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavRowView.swift; sourceTree = "<group>"; };
 		DAA80600265FCF8400E20479 /* NavItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavItemView.swift; sourceTree = "<group>"; };
+		DAA80607265FDCBB00E20479 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		DA2F0ED4265A5A2900A73AD3 /* iSpyLeipzig */ = {
 			isa = PBXGroup;
 			children = (
+				DAA80606265FDCA500E20479 /* Stores */,
 				DAA805F7265F9DA100E20479 /* Models */,
 				DAA805F5265F9D7500E20479 /* Views */,
 				DA2F0ED5265A5A2900A73AD3 /* iSpyLeipzigApp.swift */,
@@ -90,6 +93,7 @@
 		DAA805F5265F9D7500E20479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAA80605265FD6D100E20479 /* Nav */,
 				DAA805F8265FA6C100E20479 /* HeadingView.swift */,
 				DAA80604265FCFE800E20479 /* Home */,
 				DAA805F6265F9D8C00E20479 /* Journal */,
@@ -118,11 +122,26 @@
 		DAA80604265FCFE800E20479 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DAA805FC265FB86D00E20479 /* HomeView.swift */,
+				DAA805FC265FB86D00E20479 /* DashboardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DAA80605265FD6D100E20479 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
 				DAA805FE265FCE1400E20479 /* NavRowView.swift */,
 				DAA80600265FCF8400E20479 /* NavItemView.swift */,
 			);
-			path = Home;
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		DAA80606265FDCA500E20479 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				DAA80607265FDCBB00E20479 /* UserStore.swift */,
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,13 +214,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2F0ED8265A5A2900A73AD3 /* ContentView.swift in Sources */,
+				DAA80608265FDCBB00E20479 /* UserStore.swift in Sources */,
 				DAA805FF265FCE1400E20479 /* NavRowView.swift in Sources */,
 				DAA805F9265FA6C100E20479 /* HeadingView.swift in Sources */,
 				DAA805FB265FAD0200E20479 /* JournalView.swift in Sources */,
 				DAA80601265FCF8400E20479 /* NavItemView.swift in Sources */,
 				DAA805F4265F9D2E00E20479 /* JournalPostModel.swift in Sources */,
 				DAA805F0265F93A300E20479 /* JournalPostHeadingView.swift in Sources */,
-				DAA805FD265FB86D00E20479 /* HomeView.swift in Sources */,
+				DAA805FD265FB86D00E20479 /* DashboardView.swift in Sources */,
 				DAA805F2265F93F800E20479 /* JournalPostsView.swift in Sources */,
 				DA2F0ED6265A5A2900A73AD3 /* iSpyLeipzigApp.swift in Sources */,
 			);

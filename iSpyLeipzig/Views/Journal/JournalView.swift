@@ -12,7 +12,7 @@ struct JournalView: View {
         ScrollView {
             GeometryReader { geometry in
                 VStack {
-                    HeadingView(geometry: geometry, title: "Self Evaluation Journal")
+                    HeadingView(geometry: geometry, title: "Self Evaluation Journal", color: .red)
                     Spacer()
                     JournalPostsView(geometry: geometry)}
             }

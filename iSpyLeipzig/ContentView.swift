@@ -12,7 +12,7 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            HomeView()
+            DashboardView()
                 .tabItem {
                     Image(systemName: "house")
                 }

@@ -22,7 +22,6 @@ struct NavItemView: View {
             }
             .frame(width: geometry.size.width * 0.45, height: geometry.size.width * 0.075, alignment: .leading)
 
-
             VStack {
                 Spacer()
                 Text(title)
@@ -40,11 +39,6 @@ struct NavItemView: View {
         .border(color)
     }
 }
-
-/* func dynamicColor(color: Color) -> Color {
-    return Color(color)
-}
-*/
 
 struct NavItemView_Previews: PreviewProvider {
     static var previews: some View {

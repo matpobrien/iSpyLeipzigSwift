@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct DashboardView: View {
     @State var color = ""
     var body: some View {
         ScrollView {
@@ -15,7 +15,7 @@ struct HomeView: View {
                 VStack(spacing: geometry.size.height * 0.5) {
                     HStack {
                         Spacer()
-                        HeadingView(geometry: geometry, title: "Welcome to I Spy Leipzig!")
+                        HeadingView(geometry: geometry, title: "Welcome to your Dashboard!", color: .black)
                         Spacer()
                     }
                     VStack {
@@ -24,7 +24,6 @@ struct HomeView: View {
                         NavRowView(geometry: geometry, leftTitle: "Account Settings",  rightTitle: "Help Center", leftColor: .blue, rightColor: .green)
                         Spacer(minLength: geometry.size.height * 2.5)
                         NavItemView(geometry: geometry, title: "Messages", color: .purple)
-                        Spacer()
                     }
                 }
             }
@@ -33,7 +32,7 @@ struct HomeView: View {
 }
 
 
-struct HomeView_Previews: PreviewProvider {
+struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

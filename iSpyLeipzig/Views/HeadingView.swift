@@ -10,6 +10,7 @@ import SwiftUI
 struct HeadingView: View {
     let geometry: GeometryProxy
     var title: String
+    var color: Color
 
     var body: some View {
         VStack {
@@ -17,22 +18,22 @@ struct HeadingView: View {
                 // TODO: Find actual icon for hamburger menu
                 Image(systemName: "menubar.rectangle")
                     .imageScale(.large)
-                    .foregroundColor(.red)
-                Color.red
+                    .foregroundColor(color)
+                color
             }
             .frame(width: geometry.size.width * 0.92, height: geometry.size.width * 0.075, alignment: .leading)
-            .border(Color.red)
+            .border(color)
             Spacer()
 
             Text(title)
-                .foregroundColor(.red)
+                .foregroundColor(color)
                 .font(.system(
                         size: 30,
                         design: .monospaced))
             Spacer()
         }
         .frame(height: geometry.size.width * 0.5)
-        .border(Color.red)
+        .border(color)
     }
 }
 
